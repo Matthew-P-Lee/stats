@@ -38,6 +38,18 @@ y = [18,13,9,6,4]
 lcc = pearsonr(x,y)
 print 'Pearson coefficient: ' + str(lcc[0])
 
+#computing the slope of a regression line y = mx + b
+#the equation to determine slope of a line is y-y1 = m(x-x1)
+
+x = [3,6]
+y = [5.7,1.9]
+
+#solve for m
+m = (y[0] - y[1]) / (x[0] - x[1])
+
+#just printing out the equation
+print 'y = ' + str(m) + 'x' + ' + ' + str((m * -x[1]) + y[1])
+
 # example of computing a least-squares regression analysis
 # the equation of a line that represents the sum of the squares of least residual errors
 # for reference the equation of a line is y-y1 = m(x-x1)
@@ -65,9 +77,9 @@ print 'y hat: ' + str(yhat)
 sumres = 0
 
 for i, v in enumerate(x):
-	yhat = (b1 * v) + b0
-	res = y[i] - yhat #difference between the actual and predicted score
-	sumres = sumres + (res*res)
+	yhat = (b1 * v) + b0 #compute y hat
+	res = y[i] - yhat #difference between the actual (y) and predicted score (y hat)
+	sumres = sumres + (res*res) 
 
 print 'sum of squared residuals: ' + str(sumres)
 
