@@ -39,8 +39,8 @@ lcc = pearsonr(x,y)
 print 'Pearson coefficient: ' + str(lcc[0])
 
 #computing the slope of a regression line y = mx + b
-#the equation to determine slope of a line is y-y1 = m(x-x1)
-
+#the equation to determine slope of a line is y-y1 = m(x-x1)	
+#you need to choose the right points that fit the line best
 x = [3,6]
 y = [5.7,1.9]
 
