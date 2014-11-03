@@ -87,7 +87,3 @@ print 'sum of squared residuals: ' + str(sumres)
 r = pearsonr(x,y)[0]
 print 'r squared: ' + str(int(r*r * 100)) + '%'
 
-
-
-
-

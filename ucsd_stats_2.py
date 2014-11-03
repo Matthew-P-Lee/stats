@@ -4,10 +4,9 @@ import numpy as np
 import scipy as sp
 import scipy.stats as ss
 
-#calculating it when you have mean, std, and n
-x = 1123.00
-n = 1783.00
-alpha = .10
+x = 1123.00 #number of responses
+n = 1783.00 #sample size
+alpha = .10 #confidence interval 1-alpha
 
 #point estimate for a parameter of a normal distribution
 #determine p_hat as the sample mean
