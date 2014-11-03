@@ -1,4 +1,4 @@
-#calulating confidence intervals of the estimated mean 
+#calulating confidence intervals of the population mean 
 import math
 import numpy as np
 import scipy as sp
